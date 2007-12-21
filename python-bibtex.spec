@@ -10,6 +10,7 @@ Source0: http://prdownloads.sourceforge.net/pybliographer/%{name}-%{version}.tar
 URL: http://pybliographer.org/
 License: GPL
 Group: Development/Python
+BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: recode-devel
 BuildRequires: libpython-devel >= %pyver
 BuildRequires: glib2-devel
