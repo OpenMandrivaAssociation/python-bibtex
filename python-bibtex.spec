@@ -1,12 +1,13 @@
 %define name python-bibtex
 %define version 1.2.4
-%define release %mkrel 4
+%define release %mkrel 5
 
 Summary: BibTeX and recode bindings for python
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://prdownloads.sourceforge.net/pybliographer/%{name}-%{version}.tar.bz2
+Patch: python-bibtex-1.2.4-format-strings.patch
 URL: http://pybliographer.org/
 License: GPL
 Group: Development/Python
@@ -22,9 +23,10 @@ the GNU Recode library. They are intended to be used with pybliographer.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
-python setup.py build_ext
+CFLAGS="%optflags" python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
