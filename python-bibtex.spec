@@ -18,7 +18,7 @@ BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: recode-devel
 BuildRequires: libpython-devel >= %pyver
 BuildRequires: glib2-devel
-BuildRequires: flex
+BuildRequires: flex bison
 
 %description
 This python extension contains a BibTeX parser and a simple binding to
