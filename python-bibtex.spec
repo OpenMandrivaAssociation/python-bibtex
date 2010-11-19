@@ -1,6 +1,6 @@
 %define name python-bibtex
 %define version 1.2.5
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: BibTeX and recode bindings for python
 Name: %{name}
