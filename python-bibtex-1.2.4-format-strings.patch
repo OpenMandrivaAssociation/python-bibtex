@@ -1,0 +1,20 @@
+diff -p -up python-bibtex-1.2.4/bibparse.y~ python-bibtex-1.2.4/bibparse.y
+--- python-bibtex-1.2.4/bibparse.y~	2006-12-12 23:44:14.000000000 +0100
++++ python-bibtex-1.2.4/bibparse.y	2008-12-29 13:51:47.000000000 +0100
+@@ -103,14 +103,14 @@ bibtex_analyzer_parse (BibtexSource * so
+   is_comment = (entry->type && (strcasecmp (entry->type, "comment") == 0));
+ 
+   if (warning_string && ! is_comment) {
+-      bibtex_warning (warning_string);
++    bibtex_warning ("%s", warning_string);
+   }
+   
+   if (ret != 0) {
+       source->line += entry->length;
+       
+       if (error_string && ! is_comment) {
+-	  bibtex_error (error_string);
++	bibtex_error ("%s", error_string);
+       }
+ 
+       bibtex_entry_destroy (entry, TRUE);
