@@ -1,7 +1,7 @@
 Summary: BibTeX and recode bindings for python
 Name: python-bibtex
 Version: 1.2.5
-Release: 4
+Release: 5
 Source0: http://prdownloads.sourceforge.net/pybliographer/%{name}-%{version}.tar.bz2
 Patch: python-bibtex-1.2.4-format-strings.patch
 # gw disable checks
