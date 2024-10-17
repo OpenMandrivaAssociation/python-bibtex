@@ -7,7 +7,7 @@ Patch: python-bibtex-1.2.4-format-strings.patch
 # gw disable checks
 # https://sourceforge.net/tracker/?func=detail&atid=104825&aid=1620002&group_id=4825
 Patch1: python-bibtex-nocheck.patch
-URL: http://pybliographer.org/
+URL: https://pybliographer.org/
 License: GPLv2+
 Group: Development/Python
 BuildRequires: recode-devel
